@@ -1,4 +1,4 @@
-# Disk Backup Script
+# Ventoy/Disk Image Generator
 
 A simple Bash script to create a full disk image backup and verify its integrity using cryptographic checksums.
 
@@ -7,7 +7,7 @@ A simple Bash script to create a full disk image backup and verify its integrity
 - Creates a full disk image of `/dev/sda`
 - Stores backups with a timestamp in `/mnt/disk_images`
 - Computes **MD5, SHA256, and SHA512** checksums for verification
-- Automatically verifies integrity after the backup process
+- Automatically verifies integrity after the image generating process
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ A simple Bash script to create a full disk image backup and verify its integrity
    sudo ./backup.sh
    ```
 
-4. **Backup will be saved in** `/mnt/disk_images/YYYY-MM-DD_HH-MM-SS/`
+4. **Image will be saved in** `/mnt/disk_images/YYYY-MM-DD_HH-MM-SS/`
 
 ## Example Structure
 
@@ -48,4 +48,4 @@ A simple Bash script to create a full disk image backup and verify its integrity
 
 ## Verification
 
-After the backup is completed, the script will automatically verify the integrity of the image.
+After the image is completed, the script will automatically verify the integrity of the image.
