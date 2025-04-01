@@ -35,7 +35,7 @@ A simple Bash script to create a full disk image backup and verify its integrity
 
 4. **Backup will be saved in** `/mnt/disk_images/YYYY-MM-DD_HH-MM-SS/`
 
-## Example Backup Structure
+## Example Structure
 
 ```
 /mnt/disk_images/
